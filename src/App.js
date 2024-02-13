@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import SimpleComponent from './components/SimpleComponent'
+import SimpleComponent2 from './components/SimpleComponents2';
+import FirstComponent from './components/FirstComponent';
+import ButtonComponent from './components/ButtonComponent';
+import LinkComponent from './components/LinkButton';
+import MyParagraph from './components/SecondComponent';
+import ListComponent from './components/ListComponent';
+import MyForm from './components/FormComponent';
+import DivComponent from './components/DivComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SimpleComponent />
+      <SimpleComponent2 />
+      <FirstComponent />
+      <ButtonComponent />
+      <LinkComponent />
+      <MyParagraph />
+      <ListComponent />
+      <MyForm />
+      <DivComponent />
     </div>
   );
 }
